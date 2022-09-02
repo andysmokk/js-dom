@@ -369,7 +369,7 @@ button {
 }
 @media screen and (max-width: 530px) {
   .description-text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
