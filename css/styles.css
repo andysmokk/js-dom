@@ -336,10 +336,8 @@ button {
 }
 @media screen and (max-width: 530px) {
   .movie-box {
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 1fr 70%;
-    -moz-column-gap: 5px;
-         column-gap: 5px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
