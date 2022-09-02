@@ -153,7 +153,7 @@
     }
 
     @media screen and (max-width: 530px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -194,7 +194,7 @@
     }
 
     @media screen and (max-width: 530px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -212,4 +212,8 @@
     grid-column-end: span 2;
     grid-row-start: 2;
     padding: 10px;
+
+    @media screen and (max-width: 530px) {
+        padding: 5px;
+    }
 }

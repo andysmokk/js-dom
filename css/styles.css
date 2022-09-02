@@ -237,6 +237,11 @@ button {
   margin-left: 10px;
   text-shadow: var(--default-shadow);
 }
+@media screen and (max-width: 530px) {
+  .header-title {
+    padding: 15px 0px 15px 0px;
+  }
+}
 
 .logo-box {
   display: flex;
@@ -386,7 +391,7 @@ button {
 }
 @media screen and (max-width: 530px) {
   .description-title {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -424,7 +429,7 @@ button {
 }
 @media screen and (max-width: 530px) {
   .description-plot-title {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -443,6 +448,11 @@ button {
   grid-column-end: span 2;
   grid-row-start: 2;
   padding: 10px;
+}
+@media screen and (max-width: 530px) {
+  .plot-box {
+    padding: 5px;
+  }
 }
 
 .footer {
