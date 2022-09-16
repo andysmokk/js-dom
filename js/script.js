@@ -24,12 +24,11 @@ const getMarkupTemplate = (movie) => {
 };
 
 const onClick = ({ target }) => {
-  if (target.nodeName !== "BUTTON") {
-    return;
-  }
+  const currentMovie = movies.find((el) => target.id === el.imdbID);
 
-  const [currentMovie] = movies.filter((el) => target.id === el.imdbID);
-  movieBox.innerHTML = getMarkupTemplate(currentMovie);
+  if (currentMovie) {
+    movieBox.innerHTML = getMarkupTemplate(currentMovie);
+  }
 };
 
 const getMarkupMoviesList = (arr) => {
