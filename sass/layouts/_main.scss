@@ -23,37 +23,21 @@
 
     background-color: var(--background-color-btn);
     ;
-    text-shadow: var(--default-shadow);
+    text-shadow: var(--default-white-shadow);
     z-index: 1;
 
     &:hover,
     &:focus {
-        background-color: var(--hover-focus-color);
+        background-color: var(--hover-focus);
     }
 }
 
 .list-movie-btn-text {
     font-family: var(--default-font);
     font-size: 12px;
-    color: var(--white-color);
+    color: var(--white);
 
-    text-shadow:
-        -0 -1px 0 #000000,
-        0 -1px 0 #000000,
-        -0 1px 0 #000000,
-        0 1px 0 #000000,
-        -1px -0 0 #000000,
-        1px -0 0 #000000,
-        -1px 0 0 #000000,
-        1px 0 0 #000000,
-        -1px -1px 0 #000000,
-        1px -1px 0 #000000,
-        -1px 1px 0 #000000,
-        1px 1px 0 #000000,
-        -1px -1px 0 #000000,
-        1px -1px 0 #000000,
-        -1px 1px 0 #000000,
-        1px 1px 0 #000000;
+    text-shadow: var(--default-black-shadow);
 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -97,19 +81,6 @@
     }
 }
 
-// .img-poster {
-//     max-height: 420px;
-//     object-fit: cover;
-
-//     @media screen and (max-width: 768px) {
-//         max-height: 330px;
-//     }
-
-//     @media screen and (max-width: 500px) {
-//         max-height: 260px;
-//     }
-// }
-
 .description-box {
     padding: 5px;
 }
@@ -139,7 +110,7 @@
     font-size: 26px;
     font-weight: 700;
 
-    text-shadow: var(--default-shadow);
+    text-shadow: var(--default-white-shadow);
 
     @media screen and (max-width: 1000px) {
         font-size: 22px;
@@ -157,7 +128,7 @@
 .description-text-span {
     font-weight: 700;
 
-    text-shadow: var(--default-shadow);
+    text-shadow: var(--default-white-shadow);
 }
 
 .description-text {
@@ -180,7 +151,7 @@
     font-weight: 700;
     text-align: center;
 
-    text-shadow: var(--default-shadow);
+    text-shadow: var(--default-white-shadow);
 
     @media screen and (max-width: 1000px) {
         font-size: 22px;
