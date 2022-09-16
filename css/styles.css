@@ -272,6 +272,13 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .main-box {
@@ -324,33 +331,18 @@ button {
 .movie-box {
   display: grid;
   grid-template-columns: 280px 1fr;
-  grid-template-rows: 1fr 30%;
-  row-gap: 10px;
+  grid-template-rows: auto 1fr;
+  row-gap: 20px;
   -moz-column-gap: 20px;
        column-gap: 20px;
-}
-@media screen and (max-width: 1465px) {
-  .movie-box {
-    grid-template-rows: 1fr 28%;
-  }
-}
-@media screen and (max-width: 1355px) {
-  .movie-box {
-    grid-template-rows: 1fr 33%;
-  }
-}
-@media screen and (max-width: 1005px) {
-  .movie-box {
-    grid-template-rows: 1fr 35%;
-  }
 }
 @media screen and (max-width: 768px) {
   .movie-box {
     grid-template-columns: 220px 1fr;
-    grid-template-rows: 1fr 50%;
+    grid-template-rows: auto 1fr;
     -moz-column-gap: 10px;
          column-gap: 10px;
-    row-gap: 5px;
+    row-gap: 10px;
   }
 }
 @media screen and (max-width: 530px) {
